@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+{% block content %}
+<h1>
+    Добро пожаловать на Django Blog
+</h1>
+
+<div>
+    <a href="{%url 'home_page' %}">{{home}}</a>
+</div>
+
+{% endblock %}
+</body>
+</html>
+

@@ -1,6 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 h1 a {
     color: #4682B4;
-    font-family: 'Amatic CS';
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 body {
     background-size: 100% auto;
@@ -9,6 +13,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     position: relative;
+    height: 100%;
 }
 
 .page-header {
@@ -68,6 +73,7 @@ body {
     color: #FFFFFF;
     font-size: 36pt;
     text-decoration: none;
+    font-family: 'Amatic SC';
 }
 
 .content {
@@ -76,10 +82,12 @@ body {
     width: 1400px;
     float: center;
     margin-top: 15px;
+    flex: 1 0 auto;
+
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Anton';
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .date {
@@ -104,8 +112,45 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
+/*    border: 3px solid #0aa0ab;  рамка */
+  /*  border-radius: 10px; Радиус скругления */
 }
 
 .post h1 a, .post h1 a:visited {
     color: #4682B4;
+}
+.post_text{
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#gtco-footer {
+  background-color: #fff;
+  background-size: 100% auto;
+  position: relative;
+  margin-top: 405px;
+}
+.ft-img{
+  background-image: url("https://bestwallpapers.in/wp-content/uploads/2018/04/minimal-minimalist-nature-sunrise-river-mountains-trees-8k-wallpaper-2560x1600.jpg");
+  min-height: 100px;
+  margin: 0;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gtco-footer p {
+  color: #fff;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -3300%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }

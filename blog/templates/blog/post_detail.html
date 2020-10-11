@@ -7,8 +7,27 @@
                 {{ post.published_date }}
             </div>
         {% endif %}
+        {% if user.is_authenticated %}
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        {% endif %}
         <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <p class="post_text">{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
+
+<footer id="gtco-footer" role="contentinfo">
+    <div class="ft-img">
+		<div class="container">
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2020 Django. All Rights Reserved.</small>
+						<small class="block">Designed by <a href="https://github.com/hazeandhills">hazeandhills</a></small>
+					</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</footer>
+
 </html>
