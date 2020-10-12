@@ -47,3 +47,15 @@ def post_edit(request, pk):
 
 def home_page(request):
     return render(request, 'blog/home_page.html', {})
+
+
+def news_page(request):
+    return render(request, 'blog/news.html', {})
+
+
+def contact_page(request):
+    return render(request, 'blog/contact.html', {})
+
+
+def about_page(request):
+    return render(request, 'blog/about.html', {})
